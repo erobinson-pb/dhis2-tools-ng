@@ -52,7 +52,7 @@ lxc config set $NAME boot.autostart false
 lxc start $NAME 
 
 # wait for network to come up
-ping -c 3 $IP
+ping -c 30 $IP
 
 cat tomcat_setup | lxc exec $NAME -- bash
 
