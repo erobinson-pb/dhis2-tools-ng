@@ -43,7 +43,7 @@ for CONTAINER in $CONTAINERS; do
   done
   lxc start $NAME
   # wait for network to come up
-  ping -c 4 $IP
+  ping -c 40 $IP
   # run setup scripts
   
   echo "Running setup from containers/$TYPE"
